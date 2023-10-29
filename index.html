@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login/Register</title>
+</head>
+<body>
+    
+    <div class="login-card" id="login-section" class="hidden">
+        <h2>Login</h2>
+        <h3>Enter your credentials</h3>
+
+        <form class="login-form">
+            <input class="login-input" type="text" placeholder="Username">
+            <input class="login-input" type="password" placeholder="Password">
+            <a href="#">Forget your password?</a>
+            <button class="login-button" type="submit">LOGIN</button>
+            <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+        </form>
+    </div>
+
+    <div class="login-card" id="register-section" style="display: none;">
+        <h2>Register</h2>
+        <h3>Create a new account</h3>
+
+        <form class="login-form">
+            <input class="login-input" type="email" placeholder="Email">
+            <input class="login-input" type="text" placeholder="Username">
+            <input class="login-input" type="password" placeholder="Password">
+            <button class="login-button" type="submit">REGISTER</button>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
